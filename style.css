@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Karla", sans-serif;
+  max-width: 1440px;
+  font-size: 16px;
+  background-color: hsl(204, 43%, 93%);
+}
+
+main {
+  width: 50%;
+  margin: 10vh auto;
+}
+
+.secaoComunidade {
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  justify-content: space-around;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 1px 1px 50px 0 rgba(0, 0, 0, 0.2);
+}
+.secaoComunidade__titulo {
+  color: hsl(179, 62%, 43%);
+}
+.secaoComunidade__span {
+  color: hsl(71, 73%, 54%);
+  font-weight: bold;
+}
+.secaoComunidade__paragrafo {
+  color: hsl(218, 22%, 67%);
+  line-height: 22px;
+}
+
+.secaoSecundaria {
+  display: flex;
+  width: 45vw;
+}
+
+.secaoInscricao {
+  width: calc(100% / 2);
+  padding: 30px;
+  background-color: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+  border-radius: 0 0 0 5px;
+  display: flex;
+  flex-direction: column;
+}
+.secaoInscricao__titulo {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.secaoInscricao__preco {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+.secaoInscricao__span {
+  font-size: 0.4em;
+  margin-left: 15px;
+  color: hsl(0, 2%, 77%);
+  opacity: 0.6;
+  font-weight: 100;
+}
+.secaoInscricao__paragrafo {
+  font-weight: 100;
+  margin-bottom: 30px;
+}
+.secaoInscricao__botao {
+  background-color: hsl(71, 73%, 54%);
+  color: hsl(204, 43%, 93%);
+  font-weight: 700;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 50px 0 rgba(0, 0, 0, 0.2);
+}
+
+.secaoSobre {
+  width: calc(100% / 2);
+  padding: 30px;
+  background-color: #49bebd;
+  border-radius: 0 0 5px 0;
+}
+.secaoSobre__titulo {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: hsl(204, 43%, 93%);
+}
+.secaoSobre__paragrafo {
+  font-size: 14px;
+  line-height: 20px;
+  width: 210px;
+  color: #c3e7e7;
+  text-align: left;
+}
+
+@media (max-width: 375px) {    
+    main {
+        width: 90%;
+    }
+    .secaoComunidade {
+        width: 90vw;
+        height: 60vh;
+        }
+      .secaoComunidade__titulo {
+        font-size: 20px;
+      }
+      
+      .secaoComunidade__paragrafo {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      
+      .secaoSecundaria {
+        width: 90vw;
+        flex-direction: column;
+      }
+      
+      .secaoInscricao {
+        width: 100%;
+        border-radius: 0;
+      }
+      .secaoInscricao__titulo {
+        font-size: 17px;
+      }
+      .secaoInscricao__preco {
+        font-size: 1.7em;
+      }
+      .secaoInscricao__span {
+        font-size: 0.5em;
+      }
+      
+      .secaoSobre {
+        width: 100%;
+      }
+}
